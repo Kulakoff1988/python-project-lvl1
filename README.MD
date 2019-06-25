@@ -1,1 +1,1 @@
-This is the console game wi
+This is the game wich runs from console.
