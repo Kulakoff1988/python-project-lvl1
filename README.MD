@@ -1,1 +1,1 @@
-This is the game wich runs from console.
+This is the game wich runs from console (in development now).
