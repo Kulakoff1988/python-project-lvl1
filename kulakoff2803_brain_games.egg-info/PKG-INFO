@@ -1,11 +1,11 @@
 Metadata-Version: 1.2
-Name: kulakoff1988-brain-games
+Name: kulakoff2803-brain-games
 Version: 0.1.0
 Summary: UNKNOWN
 Home-page: UNKNOWN
-Author: Alexander Kulakov
+Author: kulakoff1988
 Author-email: kulakofft4@gmail.com
 License: UNKNOWN
 Description: UNKNOWN
 Platform: UNKNOWN
-Requires-Python: >=3.7,<4.0
+Requires-Python: >=2.7,<3.0
