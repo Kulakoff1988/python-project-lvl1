@@ -1,14 +1,14 @@
 [tool.poetry]
-packages =[
-	{ include = "brain_games"},
-]
 name = "kulakoff2803_brain_games"
 version = "0.1.0"
 description = ""
-authors = ["kulakoff1988 <kulakofft4@gmail.com>"]
+authors = ["Aleksandr Kulakov <kulakofft4@gmail.com>"]
+packages = [
+	{include = "brain_games"}
+]
 
 [tool.poetry.dependencies]
-python = "^2.7"
+python = "^3.6"
 
 [tool.poetry.dev-dependencies]
 
