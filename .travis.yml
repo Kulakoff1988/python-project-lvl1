@@ -1,8 +1,13 @@
 language: python
-python:
-  - "3.6"
+python: 3.6
 
-jobs:
-  include:
-    -stage: linter
-    script: ./lint
+install: make
+
+before_install:
+  - pip install poetry
+
+install:
+  - make install
+
+script:
+  - make lint
