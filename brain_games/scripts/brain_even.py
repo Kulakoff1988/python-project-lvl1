@@ -1,8 +1,8 @@
-from brain_games import greeting
+from brain_games import even
 
 
 def main():
-    greeting.run()
+    even.run()
 
 
 if __name__ == "__main__":
