@@ -1,8 +1,8 @@
-from brain_games import greeting
+from brain_games.cli import player_greeting
 
 
 def main():
-    greeting.run()
+    player_greeting()
 
 
 if __name__ == "__main__":
