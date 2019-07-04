@@ -5,12 +5,9 @@ from brain_games.engine import engine
 def run():
     game_description = 'Answer "yes" if number even otherwise answer "no".'
 
-    def game_question():
-        global random_nubmer
+    def game_data():
         random_number = randint(1, 100)
-        return random_number
+        answer = 'yes' if random_number % 2 == 0 else 'no'
+        return {'question': random_number, 'answer': answer}
 
-    def get_game_answer():
-        return 'yes' if random_nubmer % 2 == 0 else 'no'
-
-    engine(game_description, game_question, get_game_answer)
+    engine(game_description, game_data)

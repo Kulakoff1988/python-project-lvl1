@@ -6,7 +6,6 @@ def player_greeting():
 
 
 def get_player_name():
-    global name
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!\n')
     return name
