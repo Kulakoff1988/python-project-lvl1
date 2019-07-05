@@ -10,15 +10,19 @@ def run():
         second_number = randint(1, 20)
         operators = ['+', '-', '*']
         operator = choice(operators)
-        if operator == '+':
-            answer = str(first_number + second_number)
-        if operator == '-':
-            answer = str(first_number - second_number)
-        if operator == '*':
-            answer = str(first_number * second_number)
+        answer = get_result(first_number, second_number, operator)
         return {
             'question': f'{first_number} {operator} {second_number}',
             'answer': answer
         }
+
+    def get_result(number_one, number_two, operation):
+        if operation == '+':
+            answer = str(number_one + number_two)
+        if operation == '-':
+            answer = str(number_one - number_two)
+        if operation == '*':
+            answer = str(number_one * number_two)
+        return answer
 
     engine(game_description, game_data)

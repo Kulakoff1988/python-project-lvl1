@@ -11,4 +11,13 @@ To run the "brain even" game use the following instructions:
 [![asciicast](https://asciinema.org/a/254867.svg)](https://asciinema.org/a/254867)
 
 To run the "brain calc" use next:
-[![asciicast](https://asciinema.org/a/255342.svg)](https://asciinema.org/a/255342)
+[![asciicast](https://asciinema.org/a/xLjJeWMtC5zaSVZ88LFNONR6E.svg)](https://asciinema.org/a/xLjJeWMtC5zaSVZ88LFNONR6E)
+
+To run the "brain gcd" use next:
+[![asciicast](https://asciinema.org/a/255881.svg)](https://asciinema.org/a/255881)
+
+To run the "brain prime" use next:
+[![asciicast](https://asciinema.org/a/255882.svg)](https://asciinema.org/a/255882)
+
+To run the "brain progression" use next:
+[![asciicast](https://asciinema.org/a/255883.svg)](https://asciinema.org/a/255883)

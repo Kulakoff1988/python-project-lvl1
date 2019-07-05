@@ -8,14 +8,18 @@ def run():
     def game_data():
         first_number = randint(1, 100)
         second_number = randint(1, 100)
-        a = first_number
-        b = second_number
-        while a != 0 and b != 0:
-            if a > b:
-                a %= b
+        answer = get_gcd(first_number, second_number)
+        return {
+            'question': f'{first_number} {second_number}',
+            'answer': answer
+        }
+
+    def get_gcd(number_one, number_two):
+        while number_one != 0 and number_two != 0:
+            if number_one > number_two:
+                number_one %= number_two
             else:
-                b %= a
-        answer = str(a + b)
-        return {'question': f'{first_number} {second_number}', 'answer': answer}
+                number_two %= number_one
+        return str(number_one + number_two)
 
     engine(game_description, game_data)
