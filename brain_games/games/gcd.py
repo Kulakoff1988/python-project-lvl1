@@ -13,8 +13,8 @@ def run():
             'question': f'{first_number} {second_number}',
             'answer': answer
         }
-        
     engine.run(game_description, game_data)
+
 
 def get_gcd(number_one, number_two):
     while number_one != 0 and number_two != 0:
@@ -22,4 +22,4 @@ def get_gcd(number_one, number_two):
             number_one %= number_two
         else:
             number_two %= number_one
-    return str(number_one + number_two)    
+    return str(number_one + number_two)

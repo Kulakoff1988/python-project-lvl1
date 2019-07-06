@@ -10,8 +10,8 @@ def run():
         sequence_start = randint(1, 50)
         hidden_position = randint(1, 10)
         return get_game_data(sequence_start, sequence_step, hidden_position)
-        
     engine.run(game_description, game_data)
+
 
 def get_game_data(start, step, hidden_position):
     next_number = start

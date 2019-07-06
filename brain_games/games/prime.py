@@ -12,7 +12,6 @@ def run():
             'question': f'{random_number}',
             'answer': answer
         }
-        
     engine.run(title, game_data)
 
 

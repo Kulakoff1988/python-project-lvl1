@@ -15,7 +15,6 @@ def run():
             'question': f'{first_number} {operator} {second_number}',
             'answer': answer
         }
-        
     engine.run(game_description, game_data)
 
 

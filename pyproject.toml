@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "kulakoff2803_brain_games"
-version = "0.5.0"
+version = "0.5.1"
 description = ""
 authors = ["Aleksandr Kulakov <kulakofft4@gmail.com>"]
 packages = [
