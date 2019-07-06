@@ -3,11 +3,11 @@ from brain_games import engine
 
 
 def run():
-    game_description = 'Answer "yes" if number even otherwise answer "no".'
+    TITLE = 'Answer "yes" if number even otherwise answer "no".'
 
     def game_data():
-        random_number = randint(1, 100)
-        answer = 'yes' if random_number % 2 == 0 else 'no'
-        return {'question': random_number, 'answer': answer}
+        NUMBER = randint(1, 100)
+        ANSWER = 'yes' if NUMBER % 2 == 0 else 'no'
+        return {'question': NUMBER, 'answer': ANSWER}
 
-    engine.run(game_description, game_data)
+    engine.run(TITLE, game_data)

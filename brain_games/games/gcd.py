@@ -3,23 +3,23 @@ from brain_games import engine
 
 
 def run():
-    game_description = 'Find the greatest common divisor of given numbers.'
+    TITLE = 'Find the greatest common divisor of given numbers.'
 
     def game_data():
-        first_number = randint(1, 100)
-        second_number = randint(1, 100)
-        answer = get_gcd(first_number, second_number)
+        FIRST_NUMBER = randint(1, 100)
+        SECOND_NUMBER = randint(1, 100)
+        ANSWER = get_gcd(FIRST_NUMBER, SECOND_NUMBER)
         return {
-            'question': f'{first_number} {second_number}',
-            'answer': answer
+            'question': f'{FIRST_NUMBER} {SECOND_NUMBER}',
+            'answer': ANSWER
         }
-    engine.run(game_description, game_data)
+    engine.run(TITLE, game_data)
 
 
-def get_gcd(number_one, number_two):
-    while number_one != 0 and number_two != 0:
-        if number_one > number_two:
-            number_one %= number_two
+def get_gcd(first_number, second_number):
+    while first_number != 0 and second_number != 0:
+        if first_number > second_number:
+            first_number %= second_number
         else:
-            number_two %= number_one
-    return str(number_one + number_two)
+            second_number %= first_number
+    return str(first_number + second_number)

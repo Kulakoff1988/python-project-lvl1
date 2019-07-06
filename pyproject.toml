@@ -1,10 +1,20 @@
 [tool.poetry]
 name = "kulakoff2803_brain_games"
 version = "0.5.1"
-description = ""
+description = "The CLI game"
 authors = ["Aleksandr Kulakov <kulakofft4@gmail.com>"]
+repository = "https://test.pypi.org/project/kulakoff2803-brain-games/"
 packages = [
 	{include = "brain_games"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+	"Environment :: Console",
+	"Development Status :: 5 - Production/Stable",
+	"Intended Audience :: End Users/Desktop",
+	"License :: Freeware",
+	"Natural Language :: English"
 ]
 
 [tool.poetry.dependencies]

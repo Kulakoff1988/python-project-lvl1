@@ -3,26 +3,26 @@ from brain_games import engine
 
 
 def run():
-    game_description = 'What is the result of the expression?'
+    TITLE = 'What is the result of the expression?'
 
     def game_data():
-        first_number = randint(1, 20)
-        second_number = randint(1, 20)
-        operators = ['+', '-', '*']
-        operator = choice(operators)
-        answer = get_result(first_number, second_number, operator)
+        FIRST_NUMBER = randint(1, 20)
+        SECOND_NUMBER = randint(1, 20)
+        OPERATORS = ['+', '-', '*']
+        OPERATOR = choice(OPERATORS)
+        ANSWER = get_result(FIRST_NUMBER, SECOND_NUMBER, OPERATOR)
         return {
-            'question': f'{first_number} {operator} {second_number}',
-            'answer': answer
+            'question': f'{FIRST_NUMBER} {OPERATOR} {SECOND_NUMBER}',
+            'answer': ANSWER
         }
-    engine.run(game_description, game_data)
+    engine.run(TITLE, game_data)
 
 
-def get_result(number_one, number_two, operation):
-    if operation == '+':
-        answer = str(number_one + number_two)
-    if operation == '-':
-        answer = str(number_one - number_two)
-    if operation == '*':
-        answer = str(number_one * number_two)
-    return answer
+def get_result(first_number, second_number, operator):
+    if operator == '+':
+        ANSWER = str(first_number + second_number)
+    if operator == '-':
+        ANSWER = str(first_number - second_number)
+    if operator == '*':
+        ANSWER = str(first_number * second_number)
+    return ANSWER

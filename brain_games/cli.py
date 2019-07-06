@@ -6,11 +6,11 @@ def player_greeting():
 
 
 def get_player_name():
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!\n')
-    return name
+    PLAYER_NAME = prompt.string('May I have your name? ')
+    print(f'Hello, {PLAYER_NAME}!\n')
+    return PLAYER_NAME
 
 
 def get_player_answer():
-    answer = prompt.string('Your answer: ')
-    return answer
+    PLAYER_ANSWER = prompt.string('Your answer: ')
+    return PLAYER_ANSWER

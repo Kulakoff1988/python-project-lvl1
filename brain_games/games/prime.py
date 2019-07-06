@@ -3,16 +3,16 @@ from brain_games import engine
 
 
 def run():
-    title = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    TITLE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
     def game_data():
-        random_number = randint(1, 20)
-        answer = 'yes' if (isPrime(random_number)) else 'no'
+        NUMBER = randint(1, 20)
+        ANSWER = 'yes' if (isPrime(NUMBER)) else 'no'
         return {
-            'question': f'{random_number}',
-            'answer': answer
+            'question': f'{NUMBER}',
+            'answer': ANSWER
         }
-    engine.run(title, game_data)
+    engine.run(TITLE, game_data)
 
 
 def isPrime(number):

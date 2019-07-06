@@ -5,6 +5,7 @@ install: make
 
 before_install:
   - pip install poetry
+  - make package_uninstall
 
 install:
   - make install
