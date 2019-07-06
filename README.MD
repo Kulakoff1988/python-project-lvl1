@@ -2,7 +2,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/d6e35a4c804de6ef74c8/maintainability)](https://codeclimate.com/github/Kulakoff1988/python-project-lvl1/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/d6e35a4c804de6ef74c8/test_coverage)](https://codeclimate.com/github/Kulakoff1988/python-project-lvl1/test_coverage)
 
-#Brain Games
+# Brain Games
 
 This is the game wich runs from comand line.
 
