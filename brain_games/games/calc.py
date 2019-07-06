@@ -1,5 +1,5 @@
 from random import randint, choice
-from brain_games.engine import engine
+from brain_games import engine
 
 
 def run():
@@ -15,14 +15,15 @@ def run():
             'question': f'{first_number} {operator} {second_number}',
             'answer': answer
         }
+        
+    engine.run(game_description, game_data)
 
-    def get_result(number_one, number_two, operation):
-        if operation == '+':
-            answer = str(number_one + number_two)
-        if operation == '-':
-            answer = str(number_one - number_two)
-        if operation == '*':
-            answer = str(number_one * number_two)
-        return answer
 
-    engine(game_description, game_data)
+def get_result(number_one, number_two, operation):
+    if operation == '+':
+        answer = str(number_one + number_two)
+    if operation == '-':
+        answer = str(number_one - number_two)
+    if operation == '*':
+        answer = str(number_one * number_two)
+    return answer

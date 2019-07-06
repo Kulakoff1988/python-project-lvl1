@@ -1,5 +1,5 @@
 from random import randint
-from brain_games.engine import engine
+from brain_games import engine
 
 
 def run():
@@ -10,4 +10,4 @@ def run():
         answer = 'yes' if random_number % 2 == 0 else 'no'
         return {'question': random_number, 'answer': answer}
 
-    engine(game_description, game_data)
+    engine.run(game_description, game_data)

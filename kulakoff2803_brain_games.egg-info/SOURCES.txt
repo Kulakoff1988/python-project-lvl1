@@ -5,12 +5,16 @@ brain_games/engine.py
 brain_games/games/calc.py
 brain_games/games/even.py
 brain_games/games/gcd.py
+brain_games/games/prime.py
+brain_games/games/progression.py
 brain_games/scripts/__init__.py
 brain_games/scripts/brain_calc.py
 brain_games/scripts/brain_even.py
 brain_games/scripts/brain_games.py
 brain_games/scripts/brain_games.pyc
 brain_games/scripts/brain_gcd.py
+brain_games/scripts/brain_prime.py
+brain_games/scripts/brain_progression.py
 kulakoff2803_brain_games.egg-info/PKG-INFO
 kulakoff2803_brain_games.egg-info/SOURCES.txt
 kulakoff2803_brain_games.egg-info/dependency_links.txt

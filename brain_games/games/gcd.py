@@ -1,5 +1,5 @@
 from random import randint
-from brain_games.engine import engine
+from brain_games import engine
 
 
 def run():
@@ -13,13 +13,13 @@ def run():
             'question': f'{first_number} {second_number}',
             'answer': answer
         }
+        
+    engine.run(game_description, game_data)
 
-    def get_gcd(number_one, number_two):
-        while number_one != 0 and number_two != 0:
-            if number_one > number_two:
-                number_one %= number_two
-            else:
-                number_two %= number_one
-        return str(number_one + number_two)
-
-    engine(game_description, game_data)
+def get_gcd(number_one, number_two):
+    while number_one != 0 and number_two != 0:
+        if number_one > number_two:
+            number_one %= number_two
+        else:
+            number_two %= number_one
+    return str(number_one + number_two)    

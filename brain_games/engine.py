@@ -1,13 +1,11 @@
 from brain_games.cli import player_greeting, get_player_name, get_player_answer
 
 
-def engine(game_description, game_data):
+def run(game_description, game_data):
     print_game_title(game_description)
     player_name = get_player_name()
 
     print_game_process(player_name, game_data)
-
-    print(f'Congratulations, {player_name}!')
 
 
 def print_game_title(game_description):
@@ -31,3 +29,5 @@ def print_game_process(player_name, game_data):
             part_two = f'Correct answer was "{right_answer}".'
             print(part_one + part_two)
             print(f'Let\'s try again, {player_name}!')
+            return
+    print(f'Congratulations, {player_name}!')
