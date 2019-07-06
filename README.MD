@@ -2,7 +2,9 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/d6e35a4c804de6ef74c8/maintainability)](https://codeclimate.com/github/Kulakoff1988/python-project-lvl1/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/d6e35a4c804de6ef74c8/test_coverage)](https://codeclimate.com/github/Kulakoff1988/python-project-lvl1/test_coverage)
 
-This is the game wich runs from console (in development now).
+#Brain Games
+
+This is the game wich runs from comand line.
 
 Bellow you may see the way to install and use the package:
 [![asciicast](https://asciinema.org/a/255955.svg)](https://asciinema.org/a/255955)
