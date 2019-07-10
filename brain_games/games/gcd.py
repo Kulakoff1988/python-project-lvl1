@@ -23,4 +23,3 @@ def get_gcd(first_number, second_number):
         else:
             second_number %= first_number
     return first_number + second_number
-

@@ -4,7 +4,7 @@ from brain_games.cli import get_player_greeting
 
 
 def main():
-    player_greeting()
+    get_player_greeting()
 
 
 if __name__ == "__main__":

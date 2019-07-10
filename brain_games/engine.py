@@ -1,4 +1,5 @@
-from brain_games.cli import get_player_greeting, get_player_name, get_player_answer
+from brain_games.cli import get_player_greeting
+from brain_games.cli import get_player_name, get_player_answer
 
 
 def run(game_title, game_data):
