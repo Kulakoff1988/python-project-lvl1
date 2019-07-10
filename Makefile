@@ -1,3 +1,4 @@
+.PHONY: all install lint package_install
 all: install
 install:
 	@python3 -m poetry install

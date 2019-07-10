@@ -1,16 +1,18 @@
 import prompt
 
 
-def player_greeting():
-    print('\nWelcome to the Brain Games!')
+def get_player_greeting():
+    print()
+    print('Welcome to the Brain Games!')
 
 
 def get_player_name():
-    PLAYER_NAME = prompt.string('May I have your name? ')
-    print(f'Hello, {PLAYER_NAME}!\n')
-    return PLAYER_NAME
+    player_name = prompt.string('May I have your name? ')
+    print(f'Hello, {player_name}!')
+    print()
+    return player_name
 
 
 def get_player_answer():
-    PLAYER_ANSWER = prompt.string('Your answer: ')
-    return PLAYER_ANSWER
+    player_answer = prompt.string('Your answer: ')
+    return player_answer

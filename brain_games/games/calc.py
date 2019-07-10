@@ -1,19 +1,27 @@
 from random import randint, choice
 from brain_games import engine
-from brain_games.helpers import calc_result
 
 
 def run():
-    TITLE = 'What is the result of the expression?'
+    title = 'What is the result of the expression?'
 
     def game_data():
-        FIRST_NUMBER = randint(1, 20)
-        SECOND_NUMBER = randint(1, 20)
-        OPERATORS = ['+', '-', '*']
-        OPERATOR = choice(OPERATORS)
-        ANSWER = calc_result.run(FIRST_NUMBER, SECOND_NUMBER, OPERATOR)
+        first_number = randint(1, 20)
+        second_number = randint(1, 20)
+        operators = ['+', '-', '*']
+        operator = choice(operators)
+        answer = str(get_calc_result(first_number, second_number, operator))
         return {
-            'question': f'{FIRST_NUMBER} {OPERATOR} {SECOND_NUMBER}',
-            'answer': ANSWER
+            f'{first_number} {operator} {second_number}',
+            answer
         }
-    engine.run(TITLE, game_data)
+    engine.run(title, game_data)
+
+
+def get_calc_result(first_number, second_number, operator):
+    if operator == '+':
+        return first_number + second_number
+    if operator == '-':
+        return first_number - second_number
+    if operator == '*':
+        return first_number * second_number

@@ -1,4 +1,6 @@
-from brain_games.cli import player_greeting
+#!/usr/bin/env python3
+
+from brain_games.cli import get_player_greeting
 
 
 def main():

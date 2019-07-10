@@ -1,33 +1,36 @@
-from brain_games.cli import player_greeting, get_player_name, get_player_answer
+from brain_games.cli import get_player_greeting, get_player_name, get_player_answer
 
 
 def run(game_title, game_data):
     print_game_title(game_title)
-    PLAYER_NAME = get_player_name()
+    player_name = get_player_name()
 
-    print_game_process(PLAYER_NAME, game_data)
+    run_game_process(player_name, game_data)
 
 
 def print_game_title(game_title):
-    player_greeting()
-    print(f'{game_title}\n\n')
+    get_player_greeting()
+    print(f'{game_title}')
+    print()
+    print()
 
 
-def print_game_process(PLAYER_NAME, game_data):
+def run_game_process(player_name, game_data):
     correct_answers = 0
     while correct_answers < 3:
-        GAME_DATA = game_data()
-        QUESTION = GAME_DATA['question']
-        print(f'Question: {QUESTION}')
-        RIGHT_ANSWER = GAME_DATA['answer']
-        PLAYER_ANSWER = get_player_answer()
-        if PLAYER_ANSWER == RIGHT_ANSWER:
+        game_data = game_data()
+        (question, right_answer) = game_data
+        print(f'Question: {question}')
+        player_answer = get_player_answer()
+        if player_answer == right_answer:
             print('Correct!')
             correct_answers += 1
         else:
-            PART_ONE = f'"{PLAYER_ANSWER}" is wrong answer ;(. '
-            PART_TWO = f'Correct answer was "{RIGHT_ANSWER}".'
-            print(PART_ONE + PART_TWO)
-            print(f'Let\'s try again, {PLAYER_NAME}!')
+            string = (
+                f'"{player_answer}" is wrong answer ;(. '
+                f'Correct answer was "{right_answer}".'
+            )
+            print(string)
+            print(f'Let\'s try again, {player_name}!')
             return
-    print(f'Congratulations, {PLAYER_NAME}!')
+    print(f'Congratulations, {player_name}!')

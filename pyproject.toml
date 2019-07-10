@@ -8,8 +8,8 @@ packages = [
 	{include = "brain_games"}
 ]
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "Operating System :: OS Independent",
+	"Programming Language :: Python :: 3",
+	"Operating System :: OS Independent",
 	"Environment :: Console",
 	"Development Status :: 5 - Production/Stable",
 	"Intended Audience :: End Users/Desktop",
