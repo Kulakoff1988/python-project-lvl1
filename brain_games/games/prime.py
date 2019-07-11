@@ -7,7 +7,7 @@ title = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def game_data():
     number = randint(1, 20)
-    answer = 'yes' if is_prime(5) else 'no'
+    answer = 'yes' if is_prime(number) else 'no'
     return (
         f'{number}',
         answer
@@ -19,8 +19,6 @@ def is_prime(number):
         return number == 2
     divisor = 3
     base = math.sqrt(number)
-    print(base)
-    while divisor >= base and number % divisor != 0:
+    while divisor <= base and number % divisor != 0:
         divisor += 2
-    print(divisor <= base)
-    return divisor <= base
+    return base < number
