@@ -19,9 +19,9 @@ def get_prog_data(start, step, hidden_position):
     while sequence_count <= 10:
         if sequence_count == hidden_position:
             sequence += ' ..'
-            answer = str(next_number)
+            answer = next_number
         else:
             sequence += f' {next_number}'
         next_number += step
         sequence_count += 1
-    return (sequence, answer)
+    return (sequence, str(answer))

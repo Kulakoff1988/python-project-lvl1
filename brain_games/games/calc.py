@@ -9,10 +9,10 @@ def game_data():
     second_number = randint(1, 20)
     operators = ['+', '-', '*']
     operator = choice(operators)
-    answer = str(get_calc_result(first_number, second_number, operator))
+    answer = get_calc_result(first_number, second_number, operator)
     return (
         f'{first_number} {operator} {second_number}',
-        answer
+        str(answer)
     )
 
 
