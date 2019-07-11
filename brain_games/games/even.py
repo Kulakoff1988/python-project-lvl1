@@ -1,6 +1,4 @@
 from random import randint
-from brain_games import engine
-
 
 
 title = 'Answer "yes" if number even otherwise answer "no".'

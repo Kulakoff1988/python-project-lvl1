@@ -1,5 +1,4 @@
 from random import randint
-from brain_games import engine
 
 
 title = 'What number is missing in the progression?'

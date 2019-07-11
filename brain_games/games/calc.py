@@ -1,9 +1,8 @@
 from random import randint, choice
-from brain_games import engine
-
 
 
 title = 'What is the result of the expression?'
+
 
 def game_data():
     first_number = randint(1, 20)

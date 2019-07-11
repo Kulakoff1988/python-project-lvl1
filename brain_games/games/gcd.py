@@ -1,6 +1,4 @@
 from random import randint
-from brain_games import engine
-
 
 
 title = 'Find the greatest common divisor of given numbers.'
