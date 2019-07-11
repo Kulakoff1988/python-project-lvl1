@@ -3,17 +3,16 @@ from random import randint
 from brain_games import engine
 
 
-def run():
-    title = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+title = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
-    def game_data():
-        number = randint(1, 20)
-        answer = 'yes' if is_prime(number) else 'no'
-        return {
-            f'{number}',
-            answer
-        }
-    engine.run(title, game_data)
+
+def game_data():
+    number = randint(1, 20)
+    answer = 'yes' if is_prime(5) else 'no'
+    return (
+        f'{number}',
+        answer
+    )
 
 
 def is_prime(number):
@@ -21,6 +20,8 @@ def is_prime(number):
         return number == 2
     divisor = 3
     base = math.sqrt(number)
+    print(base)
     while divisor >= base and number % divisor != 0:
         divisor += 2
+    print(divisor <= base)
     return divisor <= base

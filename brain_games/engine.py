@@ -2,24 +2,24 @@ from brain_games.cli import get_player_greeting
 from brain_games.cli import get_player_name, get_player_answer
 
 
-def run(game_title, game_data):
-    print_game_title(game_title)
+def run(game):
+    print_game_title(game)
     player_name = get_player_name()
 
-    run_game_process(player_name, game_data)
+    run_game_process(player_name, game)
 
 
-def print_game_title(game_title):
+def print_game_title(game):
     get_player_greeting()
-    print(f'{game_title}')
+    print(f'{game.title}')
     print()
     print()
 
 
-def run_game_process(player_name, game_data):
+def run_game_process(player_name, game):
     correct_answers = 0
     while correct_answers < 3:
-        game_data = game_data()
+        game_data = game.game_data()
         (question, right_answer) = game_data
         print(f'Question: {question}')
         player_answer = get_player_answer()
