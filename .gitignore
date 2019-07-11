@@ -2,3 +2,5 @@
 __pycache__
 dist/
 kulakoff2803-brain-games-py3.6/
+.venv/
+.vscode/
