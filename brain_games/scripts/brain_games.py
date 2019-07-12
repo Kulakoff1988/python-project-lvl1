@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-from brain_games.cli import get_player_greeting
+from brain_games import engine
 
 
 def main():
-    get_player_greeting()
+    engine.run()
 
 
 if __name__ == "__main__":

@@ -1,17 +1,14 @@
 from random import randint
 
 
-title = 'Find the greatest common divisor of given numbers.'
+TITLE = "Find the greatest common divisor of given numbers."
 
 
 def game_data():
     first_number = randint(1, 100)
     second_number = randint(1, 100)
     answer = get_gcd(first_number, second_number)
-    return (
-        f'{first_number} {second_number}',
-        str(answer)
-    )
+    return (f"{first_number} {second_number}", str(answer))
 
 
 def get_gcd(first_number, second_number):

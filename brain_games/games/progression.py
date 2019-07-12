@@ -1,7 +1,7 @@
 from random import randint
 
 
-title = 'What number is missing in the progression?'
+TITLE = "What number is missing in the progression?"
 
 
 def game_data():
@@ -13,15 +13,15 @@ def game_data():
 
 def get_prog_data(start, step, hidden_position):
     next_number = start
-    sequence = ''
-    answer = ''
+    sequence = ""
+    answer = ""
     sequence_count = 1
     while sequence_count <= 10:
         if sequence_count == hidden_position:
-            sequence += ' ..'
+            sequence += " .."
             answer = next_number
         else:
-            sequence += f' {next_number}'
+            sequence += f" {next_number}"
         next_number += step
         sequence_count += 1
     return (sequence, str(answer))
