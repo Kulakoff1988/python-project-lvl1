@@ -25,7 +25,7 @@ def introduce(game):
 def run_game_process(player_name, game):
     correct_answers = 0
     while correct_answers < 3:
-        (question, right_answer) = game.game_data()
+        (question, right_answer) = game.get_round()
         print(f"Question: {question}")
         player_answer = cli.get_player_answer()
         if player_answer == right_answer:

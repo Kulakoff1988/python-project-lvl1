@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "kulakoff2803_brain_games"
-version = "0.5.2"
+version = "0.5.3"
 description = "The CLI game"
 authors = ["Aleksandr Kulakov <kulakofft4@gmail.com>"]
 repository = "https://test.pypi.org/project/kulakoff2803-brain-games/"

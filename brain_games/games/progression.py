@@ -4,7 +4,7 @@ from random import randint
 TITLE = "What number is missing in the progression?"
 
 
-def game_data():
+def get_round():
     sequence_step = randint(1, 10)
     sequence_start = randint(1, 50)
     hidden_position = randint(1, 10)
