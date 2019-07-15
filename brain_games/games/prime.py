@@ -2,12 +2,12 @@ import math
 from random import randint
 
 
-TITLE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+TITLE = "Answer 'yes' if given number is prime. Otherwise answer 'no'."
 
 
 def get_round():
     number = randint(1, 20)
-    answer = 'yes' if is_prime(number) else 'no'
+    answer = "yes" if is_prime(number) else "no"
     return (
         number,
         answer

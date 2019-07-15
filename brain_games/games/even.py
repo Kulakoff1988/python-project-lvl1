@@ -1,7 +1,7 @@
 from random import randint
 
 
-TITLE = 'Answer "yes" if number even otherwise answer "no".'
+TITLE = "Answer 'yes' if number even otherwise answer 'no'."
 
 
 def get_round():

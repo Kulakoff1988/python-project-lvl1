@@ -10,7 +10,7 @@ def get_round():
     operators = ["+", "-", "*"]
     operator = choice(operators)
     answer = get_calc_result(first_number, second_number, operator)
-    return (f'{first_number} {operator} {second_number}', str(answer))
+    return (f"{first_number} {operator} {second_number}", str(answer))
 
 
 def get_calc_result(first_number, second_number, operator):
